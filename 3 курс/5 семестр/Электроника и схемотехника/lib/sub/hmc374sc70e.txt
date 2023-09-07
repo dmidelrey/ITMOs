@@ -1,0 +1,9 @@
+.subckt hmc374sc70e 3 2_5 6
+Z1 N001 N002 N003 NMF
+L1 3 N002 0.4n Rser=14 Rpar=1000
+L2 N001 6 0.2n Rpar=10
+L3 N003 2_5 0.2n Rpar=10
+C1 N002 N003 0.1p Rpar=10k
+.model nmf nmf (vto=-0.7, beta=0.19, b=0.8, alpha=4, lambda=0.09,
++rd=0.25, rs=0.125,cgs=0.5p, cgd=0.12p, pb=0.7 is=1p)
+.ends hmc374sc70e

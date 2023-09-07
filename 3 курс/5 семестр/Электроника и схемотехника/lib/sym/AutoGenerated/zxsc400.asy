@@ -1,0 +1,26 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -96 -56 96 88
+WINDOW 0 0 -56 Bottom 2
+WINDOW 3 0 88 Top 2
+SYMATTR Prefix X
+SYMATTR Value zxsc400
+SYMATTR ModelFile ZXSC400.sub
+PIN -96 -32 LEFT 8
+PINATTR PinName v+ve
+PINATTR SpiceOrder 1
+PIN -96 16 LEFT 8
+PINATTR PinName ven
+PINATTR SpiceOrder 2
+PIN -96 64 LEFT 8
+PINATTR PinName gnd
+PINATTR SpiceOrder 3
+PIN 96 64 RIGHT 8
+PINATTR PinName vsense
+PINATTR SpiceOrder 4
+PIN 96 16 RIGHT 8
+PINATTR PinName vfb
+PINATTR SpiceOrder 5
+PIN 96 -32 RIGHT 8
+PINATTR PinName vdrv
+PINATTR SpiceOrder 6

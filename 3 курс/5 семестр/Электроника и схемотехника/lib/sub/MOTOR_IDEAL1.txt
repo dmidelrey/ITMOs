@@ -1,0 +1,13 @@
+.SUBCKT  MOTOR_IDEAL1  2 1 4 3 5
+* DC Motor
++ Ra=1.1 La=0.001 Rf=128 Lf=0.001 Bf=0.01 J=0.01
++ nn=1800 Van=115 Ian=8.8 Vfn=115 TI=0.0
+Vsenl 10 3 0
+VZVea 11 1 0
+Lf 4 10 {LF} Rser={RF}
+La 2 8 {La} Rser={RA}
+Bea 8 11 v=((Van-an*RA/(Vfn*2*pi*NN/(60*RF)))*i(Vsenl)*v(6)
+BTe 0 6 i=((Van-an*RA/(Vfn*2*pi*NN/(60*RF)))*i(Vsenl)*i(VZVea) Rpar={1/bf} Cpar={j}
+ITL 6 0 {Tl}
+BAdj 5 0 v=30*v(6)/pi
+.ENDS

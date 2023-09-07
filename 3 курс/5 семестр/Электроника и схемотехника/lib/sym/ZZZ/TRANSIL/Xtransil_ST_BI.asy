@@ -1,0 +1,29 @@
+Version 4
+SymbolType CELL
+LINE Normal 0 27 -4 31
+LINE Normal 32 27 36 23
+LINE Normal 0 27 32 27
+LINE Normal 0 11 32 11
+LINE Normal 32 11 16 27
+LINE Normal 0 11 16 27
+LINE Normal 16 0 16 11
+LINE Normal 32 54 0 54
+LINE Normal 16 38 32 54
+LINE Normal 0 54 16 38
+LINE Normal 32 38 0 38
+LINE Normal 37 33 32 38
+LINE Normal -4 42 0 38
+LINE Normal 16 38 16 27
+LINE Normal 16 54 16 64
+WINDOW 0 24 0 Left 0
+WINDOW 38 25 60 Left 0
+SYMATTR SpiceModel SMBJ33CA
+SYMATTR Prefix X
+SYMATTR Description Transils ST
+SYMATTR ModelFile Transil_ST.lib
+PIN 16 0 NONE 0
+PINATTR PinName +
+PINATTR SpiceOrder 1
+PIN 16 64 NONE 0
+PINATTR PinName -
+PINATTR SpiceOrder 2

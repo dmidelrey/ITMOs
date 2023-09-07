@@ -1,0 +1,3 @@
+.subckt AVG0 in AVG  Params: tau=20m
+B2 0 AVG I=idt((V(in)-delay(v(in),tau)))/tau Rpar=1 Cpar={tau} 
+.ends AVG0
